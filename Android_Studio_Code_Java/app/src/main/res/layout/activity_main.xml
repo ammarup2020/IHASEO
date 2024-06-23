@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Your existing ImageView -->
+    <View
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to\n    IHASEO"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        ></TextView>
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:id="@+id/but"
+        android:text="LOGIN"
+        android:textSize="30dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/ff"
+        android:textStyle="bold"
+        android:scrollbarStyle="insideInset">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but"
+        android:text="Don't have an account?\n     please click below"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="30dp"
+        android:layout_marginStart="70dp">
+    </TextView>
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:id="@+id/butsig"
+        android:text="SIGNUP"
+        android:textSize="30dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/but"
+        android:textStyle="bold"
+        android:scrollbarStyle="insideInset">
+    </Button>
+</RelativeLayout>
+
+
+
+

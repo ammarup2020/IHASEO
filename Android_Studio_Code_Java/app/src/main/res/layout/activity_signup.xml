@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Signup">
+
+    <!-- Your existing ImageView -->
+    <View
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ff"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:hint="\tusername"
+        android:inputType="textPersonName"
+        android:paddingLeft="11dp"></EditText>
+    <Spinner
+        android:id="@+id/spinnerRole"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:paddingLeft="11dp">
+            </Spinner>
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/spinnerRole"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:hint="\tMobile Number"
+        android:inputType="phone"
+        android:paddingLeft="11dp"></EditText>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/editTextMobile"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="\tEmail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="11dp"></EditText>
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:hint="\tPassword"
+        android:paddingLeft="10dp"></EditText>
+    <CheckBox
+        android:id="@+id/checkBoxShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Show Password"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonSignUp"
+        android:layout_below="@id/checkBoxShowPassword"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"></Button>
+
+</RelativeLayout>

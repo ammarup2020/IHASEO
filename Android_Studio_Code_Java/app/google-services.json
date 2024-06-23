@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "562202897499",
+    "firebase_url": "https://ihaseo-b20e6-default-rtdb.firebaseio.com",
+    "project_id": "ihaseo-b20e6",
+    "storage_bucket": "ihaseo-b20e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562202897499:android:caa6996b0955cc05ef237e",
+        "android_client_info": {
+          "package_name": "com.example.final_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXwL-Uhvw18DvaWTdZHFkPAVf7qO8TVKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562202897499:android:187e552f56a0da2cef237e",
+        "android_client_info": {
+          "package_name": "com.example.ihaseo_final_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXwL-Uhvw18DvaWTdZHFkPAVf7qO8TVKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

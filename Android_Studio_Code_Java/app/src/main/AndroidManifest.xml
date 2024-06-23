@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ihaseo_final_app">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.Read_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Intelligent Home"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VHASEO"
+        tools:targetApi="31">
+        <activity
+            android:name=".User_Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting"
+            android:exported="true" />
+        <activity
+            android:name=".user_Bath_appliance"
+            android:exported="true" />
+        <activity
+            android:name=".user_kit_appliance"
+            android:exported="true" />
+        <activity
+            android:name=".user_appliances_1"
+            android:exported="true" />
+        <activity
+            android:name=".user_appliances"
+            android:exported="true" />
+        <activity
+            android:name=".User_Rooms"
+            android:exported="true" />
+        <activity
+            android:name=".User_Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Setting"
+            android:exported="true" />
+        <activity
+            android:name=".Bath_appliance"
+            android:exported="true" />
+        <activity
+            android:name=".Kit_Appliance"
+            android:exported="true" />
+        <activity
+            android:name=".Appliances"
+            android:exported="true" />
+        <activity
+            android:name=".Rooms"
+            android:exported="true" />
+        <activity
+            android:name=".VerifyOtp"
+            android:exported="true" />
+        <activity
+            android:name=".SendOtp"
+            android:exported="true" />
+        <activity
+            android:name=".Notification"
+            android:exported="true" />
+        <activity
+            android:name=".Plan_Owner"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Generate_Plan"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Plan_User"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Signout"
+            android:exported="true" />
+        <activity
+            android:name=".Signup"
+            android:exported="true" />
+        <activity
+            android:name=".Signin"
+            android:exported="true" />
+        <activity
+            android:name=".Forget"
+            android:exported="true" />
+        <activity
+            android:name=".Appliance_1"
+            android:exported="true" />
+        <activity
+            android:name=".user_profile"
+            android:exported="true" />
+        <activity
+            android:name=".update_user_profile"
+            android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Update_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

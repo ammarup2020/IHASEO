@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Signin">
+
+    <!-- Your existing ImageView -->
+    <View
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view_1">
+    </View>
+    <ImageView
+        android:layout_width="450dp"
+        android:id="@+id/imageViewProfile"
+        android:layout_height="170dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_marginTop="20dp">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/editTextNEWUsername"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imageViewProfile"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:hint="\tusername"
+        android:inputType="textPersonName"
+        android:paddingLeft="11dp"></EditText>
+    <EditText
+        android:id="@+id/editTextNEWMobile"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/editTextNEWUsername"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:hint="\tMobile Number"
+        android:inputType="phone"
+        android:paddingLeft="11dp"></EditText>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/buttonSave"
+        android:layout_below="@id/editTextNEWMobile"
+        android:text="Save"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"></Button>
+</RelativeLayout>

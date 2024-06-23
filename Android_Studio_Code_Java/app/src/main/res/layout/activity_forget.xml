@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forget"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Your existing ImageView -->
+
+    <View
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/editTextEmaill"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/ff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="\tEnter your email here"></EditText>
+
+    <Button
+        android:id="@+id/resetPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_below="@id/editTextEmaill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Reset Password" />
+
+</RelativeLayout>

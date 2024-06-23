@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view">
+    </View>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:id="@+id/privacy_policy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_view"
+        android:text="Privacy and Policy"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/privacy_policy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="End-to-end encryption is a security method that keeps your communications secure. With end-to-end encryption, no one, including Google and third parties, can read eligible messages as they travel between your phone and the phone you message."
+        android:layout_below="@id/privacy_policy_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/data_security_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data and Security"
+        android:layout_below="@id/privacy_policy_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/data_security_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="SMS authentication is a step-by-step process that involves a user initiating the login process by providing username and password, the user requesting for a verification code or OTP, the business generating and sending a time-limited OTP to the registered mobile phone number via SMS, the user receiving the OTP"
+        android:layout_below="@id/data_security_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/faqs_btn"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_security_text"
+        android:layout_centerHorizontal="true"
+        android:text="FAQs" />
+
+    <TextView
+        android:id="@+id/faqs_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Why didn't application receive text message?"
+        android:layout_below="@id/faqs_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/help_support_btn"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faqs_text"
+        android:layout_centerHorizontal="true"
+        android:text="Help and Support" />
+
+    <TextView
+        android:id="@+id/help_support_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="TSMS can be a direct and convenient way to engage with customer support. Recipients tend to respond to SMS messages faster than other messaging channels, so responses can be seen and acted upon more quickly. SMS also allows customers to engage with support directly, even if they don't have a mobile support app."
+        android:layout_below="@id/help_support_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:elevation="1dp">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/homeImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="12dp"/>
+
+        <!-- Voice Icon -->
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/roomImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_room"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

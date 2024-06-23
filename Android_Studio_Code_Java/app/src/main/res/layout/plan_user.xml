@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <!-- Your existing ImageView -->
+    <View
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view_1">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plan Selected"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:layout_above="@id/totalCostTextView"
+        android:layout_below="@id/ff"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:padding="16dp">
+
+        <!-- LinearLayout to hold dynamic content -->
+        <LinearLayout
+            android:id="@+id/dynamicContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Add dynamic content here programmatically -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- TextView for displaying "Total Cost for a month" -->
+
+    <!-- TextView for displaying total cost -->
+    <TextView
+        android:id="@+id/totalCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="82dp"
+        android:fontFamily="serif"
+        android:text="Total Cost: "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/totalCostForMonthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="83dp"
+        android:text="Total Cost for a month: "
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:elevation="1dp">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/homeImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="12dp"/>
+
+        <!-- Voice Icon -->
+
+        <!-- Room Icon -->
+        <ImageView
+            android:id="@+id/roomImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_room"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Signin">
+    <View
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view_1">
+    </View>
+    <ImageView
+        android:layout_width="450dp"
+        android:id="@+id/profilePic"
+        android:layout_height="170dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_marginTop="20dp">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/profilePic"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:hint="\tusername"
+        android:inputType="textPersonName"
+        android:paddingLeft="11dp"></EditText>
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:hint="\tMobile Number"
+        android:inputType="phone"
+        android:paddingLeft="11dp"></EditText>
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/editTextMobile"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawableRight="@android:drawable/ic_notification_overlay"
+        android:hint="\tEmail"
+        android:layout_marginTop="9dp"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="11dp"></EditText>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/buttonProfile"
+        android:layout_below="@id/editTextEmail"
+        android:text="Edit Profile"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"></Button>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:elevation="1dp">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/homeImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="12dp"/>
+
+        <!-- Voice Icon -->
+
+        <!-- Room Icon -->
+        <ImageView
+            android:id="@+id/roomImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_room"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="12dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "99426441724",
+    "firebase_url": "https://myproject-3be9d-default-rtdb.firebaseio.com",
+    "project_id": "myproject-3be9d",
+    "storage_bucket": "myproject-3be9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99426441724:android:afb07a63c2e4c614a67a79",
+        "android_client_info": {
+          "package_name": "com.example.ihaseo_final_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEf4E_exGeUh8oy8lNkdLOy_vtkjfsJHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
